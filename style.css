@@ -1,5 +1,102 @@
 /*style.css This is where styling the website will be done in terms of background colour, Fonts, Font size etc.
+font-family: 'Lora', serif;
+font-family: 'Source Sans 3', sans-serif;
 */
+
+body{
+	margin:0;
+	box-sizing: border-box;
+}
+
+.container-fluid{
+	width: 80%;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.nav-item{
+	font-size: 200%;
+}
+
+.text-bg-dark ul li a{
+	color: #fff;
+}
+
 .header{
 	background-color:#42c5f5;
+	width: 80%;
+	height: 100px;
+	margin: auto;
 }
+
+.col-sm-12 h1{
+	background-color: #42c5f5;
+	font-family: 'Lora', serif;
+	font-size: 420%;
+	margin: 10px;
+}
+
+.col-sm-12{
+	background-color: #42c5f5;
+	border: 3px solid;
+	padding: 10px;
+}
+
+.footer{
+	margin: 12px;
+}
+
+h2 b{
+	text-decoration: underline;
+	text-decoration-color: #7CFC00;
+}
+
+.col-sm-8 p{
+	font-size: 180%;
+}
+
+.col-sm-4 img{
+	postion: absolute;
+}
+
+.main{ /* I insert the image in this selector class as to have it display in the background of everything, I also made it that it is in a fixed position so when the webpage is being scrolled up and down, the image will always remain in the same position no matter what.*/
+	background-image:url("images/earth.jpg"); /* The Image credit goes to Pixabay, the link to the image https://www.pexels.com/photo/planet-earth-220201/ */
+	background-size:cover;
+	background-attachment: fixed; /* This makes the image in a fixed position on the website meaning it will stay the way it is when scrolling up and down the webpage*/
+	font-family: 'Source Sans 3', sans-serif;
+	margin: 0 auto;
+	border: 5px solid;
+}
+
+p{ 
+	color: #90EE90;
+}
+
+img{ /*This is the image tag where I used the CSS to adjust the size with max-width and max-height, I also used the border-radius to make it look appealing instead of just a picture box*/
+	border-radius: 20px;
+	margin: 40px;
+	border: 3px solid #fff;
+	max-width: 380px;
+	max-height: 380px;
+}
+
+button{
+	background: transparent;
+	cursor: pointer;
+	text-align: center;
+	width: 180px;
+	padding: 20px;
+	font-weight: bold;
+	border: 3px solid #BEB068;
+}
+
+
+button:hover{ /* when I move my cursor to the button, it should highlight the color of the background-color */
+	background-color: #00FF00;
+}
+
+button:active{ /*When you click the button it should display the color code which indicates that the button was activated*/
+	color: #2ecc71;
+	text-decoration: underline;
+}
+
